@@ -42,6 +42,9 @@ img {
 
 
 /* Navbar */
+.navbar h1 {
+    padding-left: 180px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,6 +67,8 @@ img {
   color: #e6fcf5;
   padding: 1.45rem;
   margin: 0 0.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .navbar a:hover {
@@ -94,8 +99,8 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-  .name{
-    text-align: center !important;
+  .navbar h1 {
+    padding-left: 20px;
   }
   h1{
     text-align: center;

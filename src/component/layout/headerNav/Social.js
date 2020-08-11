@@ -8,12 +8,10 @@ const SocialMedia = () => {
           <a 
             href ='https://github.com/Bojurie?tab=repositories' target='blank'><i className="fab fa-github"></i>
           </a>
-          {/* <a 
-            href = '714-306-2369' target='blank'><i className="fas fa-phone-alt"></i>
+           <a 
+            href ='https://www.linkedin.com/in/bojurie-rogers-wright/' target='blank'><i class="fab fa-linkedin"></i>
           </a>
-          <a 
-            href = 'bojurier@gmail.com' target='blank'><i className="far fa-envelope"></i> 
-          </a> */}
+    
           <a 
           href = 'https://www.facebook.com/bojurie.rogers/' target='blank'><i className="fab fa-facebook-f"></i>
           </a>

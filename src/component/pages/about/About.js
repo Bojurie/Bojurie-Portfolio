@@ -13,12 +13,10 @@ const About = ({heading}) => {
                 </div>  
                 <div className="about_paragraph">
                     <p className='col-lg-12'>
-                    Hey there!My name is Aziz Mohamed and I 'm a 21 year old male based out of beautiful Vancouver, British Columbia. I'
-                    m currently self - teaching myself Front - End Web Development through FreeCodeCamp 's online curriculum.
-
-                    Here you 'll see my web development portfolio consisting of my personal projects. I am competent and well-versed in HTML5, CSS3, jQuery and Javascript.
-
-                    My passion is to learn to use technology to help solve real world challenges and help make user experiences go smoothly and seamlessly
+                    Through the years my passion
+                    for anything Technology have always been my compass.Even as a young boy, i have alway been intriged by computer and other technologies so much so that i usually find myself dissamply computers just to see how it works.As time passes i moved from mechanical to software engineering.That was when i decided to start teaching myself how to program.i first started about a year and the half ago by going through resources like free codecamp, Udemy, Bottega etc.From building web applications to building mobile applications i have learned programing languages such as HTML5, CSS3, JavaScript, Swift etc.So weather it Web or Mobile App you need i 'm your guy so please don'
+                    t hesitate to contact me
+                    if you have any questions.
                     </p>
                 </div>
             </div>
