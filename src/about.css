@@ -1,0 +1,50 @@
+.about::before {
+   height: 0px;
+   width: 0px;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   border-top: 30px solid #183153;
+   margin: 0 auto;
+   margin-top: -60px;
+   content: "";
+   display: block;
+}
+
+.about {
+  /* display: flex; */
+  background: #099268;
+  padding: 60px 140px 150px;
+
+}
+
+.aboutHeading {
+  font-size: 23px;
+  text-align: center;
+  padding: 35px 0 15px;
+  text-transform: uppercase;
+}
+
+
+.about_paragraph {
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 2.5;
+}
+
+
+.about-img {
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  float: left;
+}
+
+.aboutContent img {
+  height: 200px;
+  width: 200px;
+}
+
+/* .about-content {
+  background: #183153;
+} */

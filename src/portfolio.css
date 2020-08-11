@@ -1,0 +1,35 @@
+.portfolio_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23px;
+  padding: 35px 0 15px;
+
+}
+.portfolio_items {
+  padding: 60px 0;
+}
+
+.portfolio-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+  margin: auto;
+}
+.portfolio_items-wrapper_item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(254, 205, 11);
+}
+
+.card {
+  width: 350px;
+  border-radius: 6px;
+  background-color: #183153;
+  padding: 10px;
+  
+}
+
+.card-image {
+  padding: 10px;
+}

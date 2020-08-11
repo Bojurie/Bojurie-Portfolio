@@ -1,0 +1,18 @@
+.bg-primary {
+  
+  
+}
+.footer {
+  text-align: center;
+  background-color: #099268;
+  padding: 15px 70px;
+}
+
+.social {
+  color: #e6fcf5;
+  font-size: 10px;
+}
+
+.social-media a:hover{
+  color: rgb(254, 205, 11);
+}

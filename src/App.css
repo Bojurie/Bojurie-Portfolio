@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #e6fcf5;
+  --danger-color: #dc3545;
+  --success-color: #099268;
+  --white-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'Pompiere', cursive;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e6fcf5;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: #e6fcf5;
+  font-size: 16px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.primary {
+  background-color: #099268;
+  padding: 15px 70px;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #e6fcf5;
+  padding: 1.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: rgb(254, 205, 11);
+  
+}
+
+.home_heading {
+  text-align: center;
+  padding: 180px 0;
+
+}
+
+.home {
+    background-color: #183153;
+
+}
+.home_heading h1{
+  font-size: 4rem;
+}
+
+.home_heading p {
+  font-size: 2rem;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .name{
+    text-align: center !important;
+  }
+  h1{
+    text-align: center;
+    font-size: 25px
+  }
+  img {
+    width: 100%;
+    height: auto;;
+  }
+  .social-media ul a{
+    padding: 1rem;
+    text-align: center;
+  }
+  .home_heading h1 {
+    font-size: 35px;
+  }
+  .home_heading p {
+    font-size: 20px;
+  }
+  .about {
+    padding: 0 30px !important;
+  }
+  .about_paragraph {
+    font-size: 20px;
+  }
+  .aboutHeading {
+    font-size: 35px;
+  }
+  .portfolio_heading {
+    font-size: 35px;
+  }
+  .card {
+    width: auto !important;
+  }
+  /* .portfolio-images {
+    display: ;
+    
+  } */
+  /* .footer {
+
+  } */
+}
