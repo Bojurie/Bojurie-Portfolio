@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+// import React, { Fragment } from 'react';
 
-const Name = () => {
-  return (
-    <Fragment>
-      <div className='name'>
-        <h1> Bojurie Rogers-Wright</h1>
-      </div>
+// const Name = () => {
+//   return (
+//     <Fragment>
+//       <div className='name'>
+//         <h1> Bojurie Rogers-Wright</h1>
+//       </div>
       
-    </Fragment>
-  )
-}
+//     </Fragment>
+//   )
+// }
 
-export default Name;
+// export default Name;

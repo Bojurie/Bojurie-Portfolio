@@ -9,7 +9,7 @@ const SocialMedia = () => {
             href ='https://github.com/Bojurie?tab=repositories' target='blank'><i className="fab fa-github"></i>
           </a>
            <a 
-            href ='https://www.linkedin.com/in/bojurie-rogers-wright/' target='blank'><i class="fab fa-linkedin"></i>
+            href ='https://www.linkedin.com/in/bojurie-rogers-wright/' target='blank'><i className="fab fa-linkedin"></i>
           </a>
     
           <a 

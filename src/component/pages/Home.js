@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import About from '../pages/about/About';
 import Portfolio from './portfolio/Portfolio';
-import Footer from './footer/footer';
+import Footer from '../pages/footer/Footer';
 
 import PropTypes from 'prop-types';
 

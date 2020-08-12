@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Card from './card';
+import Card from '../portfolio/Card';
 
 const image = require('../../../assets/Birthday Countdown.png');
 const image1 = require('../../../assets/5PLogix.png');
