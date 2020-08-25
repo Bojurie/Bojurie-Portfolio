@@ -19,6 +19,7 @@ const SocialMedia = () => {
           <a 
           href = 'https://www.instagram.com/bojuriescode/' target='blank' ><i className="fab fa-instagram"></i>
           </a>
+          
         </ul>
     </div>
   )

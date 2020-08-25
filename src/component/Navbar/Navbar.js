@@ -1,35 +1,57 @@
-import React, { Component } from 'react';
-import { MenuItems } from './MenuItems';
+import React, { useState } from 'react';
+import { Link, } from 'react-router-dom';
+
 import './Navbar.css';
 
 
-class Navbar extends Component {
-  state = { clicked: false }
+const Navbar = () => {
+  const [click, setClick] = useState(false);
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked});
-  }
+  const handleClick = () => setClick(!click);
 
-  render() {
+  const closeMobileMenu = () => setClick(false);
+  
     return(
       <nav className='NavbarItems'>
-          <h1 className='navbar-logo'>Bojurie Rogers-Wright</h1>
-          <div className='menu-icon' onClick={this.handleClick}>
-              <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+          <h1 className='navbar-logo' onClick={closeMobileMenu}><i className="fab fa-bootstrap"></i>ojurie <i className="far fa-registered"></i>ogers -<i className="fab fa-wikipedia-w"></i>right</h1>
+          <div className='menu-icon' onClick={handleClick}>
+              <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
           </div>
-          <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-              {MenuItems.map((item, index) => {
-                return (
-                  <li key={index}>
-                  <a className={item.cName} href={item.url}>
-                    {item.title}
-                  </a>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                
+                  <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                      Home
+                    </Link>
                 </li>
-                )
-            })}
+                <li className='nav-item'>
+                    <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                      Contact
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/github' className='nav-links' onClick={closeMobileMenu} target='blank'>
+                      <i className="fab fa-github"></i>
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/linkedin' className='nav-links' onClick={closeMobileMenu} target='blank'>
+                      <i className="fab fa-linkedin"></i>
+                    </Link>
+                </li>
+                 <li className='nav-item'>
+                    <Link to='/facebook' className='nav-links' onClick={closeMobileMenu} target='blank'>
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                </li>
+                 <li className='nav-item'>
+                    <Link to='/instagram' className='nav-links' onClick={closeMobileMenu}
+                    target='blank'>
+                      <i className="fab fa-instagram"></i>
+                    </Link>
+                </li>
           </ul>
       </nav>
     )
   }
-}
 export default Navbar;

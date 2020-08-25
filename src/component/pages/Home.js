@@ -1,34 +1,37 @@
 import React, { Fragment } from 'react';
 import About from '../pages/about/About';
-import Portfolio from './portfolio/Portfolio';
+// import Portfolio from './portfolio/Portfolio';
 import Footer from '../pages/footer/Footer';
+import Showcase from './ShowcaseSection/Showcase';
+import Cards from './portfolio/Cards';
 
-import PropTypes from 'prop-types';
+import '../../App.css';
 
 
-const Home = ({heading, paragraph}) => {
+const Home = () => {
   
   return (
     <Fragment>
-    <div className='home'>
-        <div className="home_heading">
-          <h1>{heading}</h1>
-          <p>{paragraph}</p>
-        </div> 
+   
+        {/* <div className="home_heading"> */}
+      <Showcase />
+        {/* </div>   */}
+        
       <About/>
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <Cards />
       <Footer />
-    </div>
+  
     </Fragment>
   )
 }
-Home.defaultProps = {
-  heading: 'Full Stack Web Developer',
-  paragraph: 'Portfolio Gallery'
-};
+// Home.defaultProps = {
+//   heading: 'Full Stack Web Developer',
+//   paragraph: 'Portfolio Gallery'
+// };
 
-Home.propTypes = {
-  heading: PropTypes.string.isRequired,
-  paragraph: PropTypes.string.isRequired
-};
+// Home.propTypes = {
+//   heading: PropTypes.string.isRequired,
+//   paragraph: PropTypes.string.isRequired
+// };
 export default Home;

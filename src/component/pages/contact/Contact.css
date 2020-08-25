@@ -1,4 +1,85 @@
+
+
 body {
-  background-color: #183153;
+  /* background-color: #183153; */
   text-align: center;
+}
+.contact-container {
+  background-color: #183153;
+  padding: 100px 200px;
+
+}
+ form {
+   /* max-width: 600px; */
+   text-align: center;
+   margin: 20px auto;
+ }
+
+ form a {
+   padding: 0;
+ }
+
+ .header p{
+   padding: 5px;
+   letter-spacing: 2px;
+   font-weight: bold;
+ }
+ input,
+ textarea {
+   border: 0;
+   outline: 0;
+   padding: 2em;
+   display: block;
+   width: 100%;
+   margin-top: 1em;
+   font-family: 'Merriweather', sans-serif;
+   resize: none;   
+ }
+
+   textarea {
+     height: 234px;
+   }
+ 
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+button {
+  width: 55rem;
+  padding: 0;
+}
+@media (max-width: 960px) {
+  .contact-container {
+    padding: 80px;
+    /* width: 100%;
+    float: none;
+    margin-bottom: 0; */
+  }
+}
+@media (max-width: 760px) {
+  .contact-container {
+    padding: 50px;
+    /* width: 100%;
+    float: none;
+    margin-bottom: 0; */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
 }

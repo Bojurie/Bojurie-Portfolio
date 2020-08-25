@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Card = (props) => {
-  return (
-    <div className='card '>
-        <img src={props.image} alt=''/>
-    </div>
-  )
-}
-export default Card;
+// const Card = (props) => {
+//   return (
+//     <div className='card'>
+//         <img src={props.image} alt='Card Image'/>
+//     </div>
+//   )
+// }
+// export default Card;

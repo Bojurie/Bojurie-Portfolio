@@ -5,9 +5,8 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
- 
-
 }
+
 .navbar-logo {
   justify-self: start;
   margin-left: 20px;
@@ -57,7 +56,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 399px;
+    height: 558px;
     position: absolute;
     top: 80px;
     left: -100%;
@@ -73,7 +72,7 @@
   }
   .nav-links {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
     display: table;
 
@@ -97,6 +96,10 @@
     transform: translate(-100%, 60% );
     font-size: 1.8rem;
     cursor: pointer;
+  }
+  .fa-times{
+    color: #fff;
+    font-size: 2rem;
   }
 
   

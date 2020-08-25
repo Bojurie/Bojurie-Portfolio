@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import '../../../about.css';
+
 
 const About = ({heading}) => {
     return (
