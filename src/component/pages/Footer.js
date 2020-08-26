@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import SocialMedia from '../../layout/headerNav/Social';
+import SocialMedia from '../../component/layout/headerNav/Social';
 import CopyrightYear from 'react-copyright-year';
 
-import '../../../footer.css';
+import '../../footer.css';
 
 const Footer = () => {
   return(

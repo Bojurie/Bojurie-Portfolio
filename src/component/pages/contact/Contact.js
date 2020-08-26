@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './Contact.css';
-import Footer from '../footer/Footer';
+import Footer from '../Footer';
 import ContactForm from './ContactForm';
 
 const Contact = () => {
