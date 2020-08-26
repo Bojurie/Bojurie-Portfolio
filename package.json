@@ -1,6 +1,10 @@
 {
   "name": "my-app",
+  "description": "bojurie portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "v13.9.x"
+  },
   "private": true,
   "proxy": "http://127.0.0.1:5000",
   "secure": false,
