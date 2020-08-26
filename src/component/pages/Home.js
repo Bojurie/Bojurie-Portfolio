@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import About from '../pages/about/About';
 // import Portfolio from './portfolio/Portfolio';
-import Footer from '../pages/footer/Footer';
+import Footer from './footer/Footer';
 import Showcase from './ShowcaseSection/Showcase';
 import Cards from './portfolio/Cards';
 
