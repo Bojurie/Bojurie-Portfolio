@@ -6,7 +6,6 @@
     "node": "v13.9.x"
   },
   "private": true,
-  "proxy": "http://127.0.0.1:5000",
   "secure": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

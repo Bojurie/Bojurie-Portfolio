@@ -53,21 +53,17 @@ class ContactForm extends Component {
           // clear form
           this.setState(initialState);
         }
-        const user = {
-          name: this.state.name,
-          email: this.state.email,
-          subject: this.state.subject,
-          message: this.state.message
-        };
+        const { name, email, subject,message } = this.state;
 
         // eslint-disable-next-line
-        axios.post('/form', {user})
+        axios.post('/contactForm', { name, email, subject,message })
           .then(res => {
             console.log(res)
           });
          
       }
   render() {
+    const { name, email, subject,message } = this.state;
     return (
       <Fragment>
         <form onSubmit={this.handleSubmit}>
@@ -75,7 +71,7 @@ class ContactForm extends Component {
                 <input 
                 name='name'
                 placeholder='Full Name'
-                value={this.state.name} 
+                value={name} 
                 onChange={e => this.handleChange(e)}
                 />
                 <div style={{fontSize: 23, color: "red"}}>
@@ -84,7 +80,7 @@ class ContactForm extends Component {
                 <input 
                 name='email'
                 placeholder='Email'
-                value={this.state.email} 
+                value={email} 
                 onChange={e => this.handleChange(e)}
                 />
                 <div style={{fontSize: 23, color: "red"}}>
@@ -93,7 +89,7 @@ class ContactForm extends Component {
               <input 
                 name='subject'
                 placeholder='Subject'
-                value={this.state.subject} 
+                value={subject} 
                 onChange={e => this.handleChange(e)}
                 />
                 <div style={{fontSize: 23, color: "red"}}>
@@ -104,7 +100,7 @@ class ContactForm extends Component {
               <textarea
                 name='message' 
                 placeholder = 'Message'
-                value={this.state.message} 
+                value={message} 
                 onChange={e => this.handleChange(e)}
                 />
                 <div style={{fontSize: 23, color: "red"}}>
