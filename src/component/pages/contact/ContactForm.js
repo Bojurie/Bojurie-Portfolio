@@ -53,15 +53,15 @@ class ContactForm extends Component {
           // clear form
           this.setState(initialState);
         }
-        const { name, email, subject,message } = this.state;
+        const { name, email, subject, message } = this.state;
 
         // eslint-disable-next-line
-        axios.post('/contactForm', { name, email, subject,message })
+        axios.post('/contact', { name, email, subject, message })
           .then(res => {
             console.log(res)
-          });
-         
+          });  
       }
+
   render() {
     const { name, email, subject,message } = this.state;
     return (

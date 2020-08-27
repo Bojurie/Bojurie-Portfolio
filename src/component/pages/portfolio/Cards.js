@@ -10,7 +10,6 @@ const image5 = require('../../../assets/images/Property Managment.png');
 const image6 = require('../../../assets/images/class selector.png');
 const image7 = require('../../../assets/images/Newletter.png');
 const image8 = require('../../../assets/images/DailySmarty.png');
-// const image9 = require('../../../assets/images/5PLogix.png');
 
 const Cards = () => {
   return (
