@@ -3,7 +3,8 @@
   "description": "bojurie portfolio",
   "version": "0.1.0",
   "engines": {
-    "node": "v13.9.x"
+    "node": "v13.9.0",
+    "npm": "6.13.7"
   },
   "private": true,
   "proxy": "http://192.168.0.39:5000",
