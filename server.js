@@ -1,10 +1,11 @@
-const {createserver}= require('http');
 const compression = require('compression');
 const morgan = require('morgan');
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const http = require('http');
 const path = require('path');
+
 
 const app = express();
 const dev = app.get('env') !== 'prodction'
@@ -30,7 +31,7 @@ if(dev) {
   
 }
 
-const server = createserver(app);
+// const server = createserver(app);
 
 app.post('/contact', (req, res) => {
   nodemailer.createTestAccount((err, account) => {
@@ -83,9 +84,19 @@ app.post('/contact', (req, res) => {
 
 
 
-const normalizePort = port => parseInt(port, 10);
-const PORT = normalizePort(process.env.PORT || 5000);
-server.listen(PORT, err => {
-  if(err) throw err;
-  console.log('Server Started!');
+// const normalizePort = port => parseInt(port, 10);
+// const PORT = normalizePort(process.env.PORT || 5000);
+// server.listen(PORT, err => {
+//   if(err) throw err;
+//   console.log('Server Started!');
+// });
+
+const server = http.createServer(app).listen(5000, function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log(`Server listening on ${host}:${port}`);
+  }
 });
