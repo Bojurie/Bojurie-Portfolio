@@ -17,7 +17,7 @@ const SocialMedia = () => {
           </a>
 
           <a 
-          href = 'https://www.instagram.com/bojuriescode/' target='blank' ><i className="fab fa-instagram"></i>
+          href = 'https://www.instagram.com/bwrightscode/' target='blank' ><i className="fab fa-instagram"></i>
           </a>
           
         </ul>
